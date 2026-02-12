@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda virtual de productos antiestrés como pelotas y bandas de resistencia para mejorar tu bienestar.">
+    <title>Tienda antiestres | CalmaPlus</title>
+</head>
+
+<body id="pagina-carrito">
+    
+    <header class="header-principal">
+        <h1 class="logo">CalmaPlus</h1>
+        <p class="slogan">Tu aliado contra el estrés diario</p>
+
+        <form class="form-busqueda" action="#">
+            <input class="input-busqueda" type="search" name="busqueda" placeholder="Buscar productos...">
+            <button class="btn btn-buscar" type="submit">Buscar</button>
+        </form>
+
+        <nav class="nav-usuario">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+            <a class="nav-link" href="login.html">Mi cuenta</a>
+        </nav>
+    </header>
+    
+    <nav class="nav-principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+            <li><a class="nav-link" href="productos.html">Productos</a></li>
+            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+        </ul>             
+    </nav>
+    
+    <main class="contenido-principal">
+
+        <h2 class="titulo-pagina">Tu Carrito de Compras</h2>
+        
+        <section class="carrito-tabla-seccion">
+            <table class="tabla-carrito" border="1">
+                <thead class="tabla-head">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tabla-body">
+                    <tr class="carrito-item">
+                        <td class="item-nombre">Pelota de espuma antiestrés</td>
+                        <td class="item-precio">$15.000</td>
+                        <td class="item-cantidad">
+                            <input class="input-cantidad" type="number" value="2" min="1">
+                        </td>                    
+                        <td class="item-subtotal">$30.000</td>                   
+                        <td class="item-accion">
+                            <button class="btn btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="carrito-vaciar">
+            <h3 class="subtitulo-seccion">Vaciar carrito</h3>
+            <form class="form-vaciar-carrito" action="eliminacion_total.html">
+                <button class="btn btn-vaciar" type="submit">Eliminar todos los productos</button>
+            </form>
+        </section>
+        
+        <section class="carrito-total-seccion">
+            <h3 class="total-pagar">Total a pagar: $30.000</h3>        
+
+            <form class="form-finalizar" action="confirmacion.html">
+                <button class="btn btn-finalizar" type="submit">Finalizar compra</button>
+            </form>
+
+            <a class="link-seguir-comprando" href="productos.html">
+                <button class="btn btn-seguir">Seguir comprando</button>
+            </a>       
+        </section>
+
+    </main>
+    
+    <footer class="footer-principal">
+
+        <h3 class="footer-titulo">Tienda</h3>
+        <section class="footer-seccion">
+            <ul class="footer-lista">          
+                <li><a class="footer-link" href="productos.html">Productos</a></li>                    
+                <li><a class="footer-link" href="ofertas.html">Ofertas</a></li>
+            </ul>             
+        </section>
+
+        <h3 class="footer-titulo">Soporte</h3>
+        <section class="footer-seccion">
+            <ul class="footer-lista"> 
+                <li><a class="footer-link" href="terminos.html">Terminos y condiciones</a></li>       
+            </ul>             
+        </section>
+
+        <h3 class="footer-titulo">Contactanos</h3>
+        <section class="footer-seccion">
+            <ul class="footer-lista"> 
+                <li>Telefono:(604) 580 6935 ext 002</li>
+                <li>Correo: calmaplus@gmail.com</li>
+                <li>
+                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">Direccion: Av32 #57-26</a> 
+                </li>                
+            </ul>  
+        </section>
+
+        <h3 class="footer-titulo">Redes sociales</h3>
+        <section class="footer-seccion">
+            <ul class="footer-lista"> 
+                <li><a class="footer-link" href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li> 
+                <li><a class="footer-link" href="" target="_blank">Facebook</a></li>
+                <li><a class="footer-link" href="" target="_blank">TikTok</a></li>                    
+            </ul> 
+        </section>
+
+        <p class="footer-copy">&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+</html>
