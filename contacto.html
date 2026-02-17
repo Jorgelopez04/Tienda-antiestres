@@ -5,69 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda virtual de productos antiestrés como pelotas y bandas de resistencia para mejorar tu bienestar.">
     <title>Tienda antiestres | CalmaPlus</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    
 </head>
-<body>
-    <header>
-        <h1>CalmaPlus</h1>
-        <p>Tu aliado contra el estrés diario</p>
-        <form action="#">
-            <input type="search" name="busqueda"placeholder="Buscar productos...">
-            <button type="submit">Buscar</button>
-        </form>
-        <nav>
-        <a href="carrito.html">Carrito</a>
-        <a href="login.html">Mi cuenta</a>
-        </nav>
-    </header>    
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Sobre nosotros</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ofertas.html">Ofertas</a></li>
+
+<body id="pagina-contacto">
+
+    <header class="header-principal">
+
+        <div class="header-contenedor">
+
+            
+            <div class="header-izquierda">
+                <h1 class="logo">CalmaPlus</h1>
+                <p class="slogan">Tu aliado contra el estrés diario</p>
+            </div>
+
+            
+            <div class="header-centro">
+                <input type="text" placeholder="Buscar productos..." class="input-buscar">
+                <button>Buscar</button>
+            </div>  
+
+            
+            <nav class="nav-usuario">
+                <a href="carrito.html" class="nav-icono">🛒</a>
+                <a href="login.html" class="nav-icono">👤</a>
+            </nav>
+
+        </div>
+
+    </header>   
+
+    <nav class="nav-principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+            <li><a class="nav-link" href="productos.html">Productos</a></li>
+            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li><a class="nav-link" href="ofertas.html">Ofertas</a></li>
         </ul>             
     </nav>
-    <main>
 
+    <main class="contenido-principal">
+        <section class="contacto-seccion">
 
+            <h2 class="titulo-pagina">Contáctanos</h2>
+
+            <article class="contacto-introduccion">
+                <p class="contacto-texto">
+                    En CalmaPlus estamos comprometidos con brindar una atención cercana,
+                    clara y oportuna a todos nuestros clientes. Si tienes alguna duda
+                    sobre nuestros productos, tu pedido o necesitas asesoría para elegir
+                    el artículo que mejor se adapte a tus necesidades, nuestro equipo
+                    estará encantado de ayudarte.
+                </p>
+
+                <p class="contacto-texto">
+                    Puedes comunicarte con nosotros a través de los siguientes medios
+                    o enviarnos un mensaje utilizando el formulario disponible en esta página.
+                    Nos esforzamos por responder todas las solicitudes en el menor tiempo posible.
+                </p>
+            </article>
+
+            <article class="contacto-informacion">
+                <h3 class="contacto-subtitulo">Información de Contacto</h3>
+
+                <ul class="contacto-lista">
+                    <li class="contacto-item">
+                        <strong>Teléfono:</strong> (604) 580 6935 ext 002
+                    </li>
+                    <li class="contacto-item">
+                        <strong>Correo electrónico:</strong> calmaplus@gmail.com
+                    </li>
+                    <li class="contacto-item">
+                        <strong>Dirección:</strong> Av32 #57-26
+                    </li>
+                    <li class="contacto-item">
+                        <strong>Horario de atención:</strong> Lunes a Viernes de 8:00 a.m. a 6:00 p.m.
+                    </li>
+                </ul>
+
+                <p class="contacto-texto">
+                    Nuestro horario de atención está diseñado para brindarte soporte durante
+                    la mayor parte del día. En caso de escribirnos fuera de este horario,
+                    responderemos tu solicitud al siguiente día hábil.
+                </p>
+            </article>
+
+            <article class="contacto-formulario-seccion">
+                <h3 class="contacto-subtitulo">Envíanos un Mensaje</h3>
+
+                <form class="contacto-formulario" action="#" method="post">
+
+                    <div class="form-grupo">
+                        <label class="form-label" for="nombre">Nombre completo:</label>
+                        <input class="form-input" type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label" for="correo">Correo electrónico:</label>
+                        <input class="form-input" type="email" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label" for="telefono">Teléfono (opcional):</label>
+                        <input class="form-input" type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label" for="mensaje">Mensaje:</label>
+                        <textarea class="form-textarea" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-boton">
+                        <button class="btn btn-enviar" type="submit">Enviar mensaje</button>
+                    </div>
+
+                </form>
+
+                <p class="contacto-texto">
+                    Al enviar este formulario, aceptas que podamos utilizar la información
+                    proporcionada para responder a tu solicitud. Tus datos serán tratados
+                    con confidencialidad y no serán compartidos con terceros sin tu autorización.
+                </p>
+            </article>
+
+        </section>
+
+        
     </main>
-    <footer>
-        <h3>Tienda</h3>
-            <section>
-                <ul>          
-                    <li><a href="productos.html">Productos</a></li>                    
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                </ul>             
-            </section>
-        <h3>Soporte</h3>
-            <section>
-                <ul> 
-                    <li><a href="terminos.html">Terminos y condiciones</a></li>       
-                </ul>             
-            </section>
 
-        <h3>Contactanos</h3>
-            <section>
-                <ul> 
-                    <li>Telefono:(604) 580 6935 ext 002</li>
-                    <li>Correo: calmaplus@gmail.com</li>
-                    <li>
-                    <a href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">Direccion: Av32 #57-26</a> 
-                    </li>                
-                </ul>  
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
 
-            </section>
-        <h3>Redes sociales</h3>
-            <section>
-                <ul> 
-                    <li><a href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
-                    <li><a href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li> 
-                    <li><a href="" target="_blank">Facebook</a></li>
-                    <li><a href="" target="_blank">TikTok</a></li>                    
-                </ul> 
-            </section>            
-        <p>&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
-    </footer>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Tienda</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="productos.html">Productos</a></li>
+                <li><a class="footer-link" href="ofertas.html">Ofertas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Soporte</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Contáctanos</h3>
+            <ul class="footer-lista">
+                <li>Teléfono: (604) 580 6935 ext 002</li>
+                <li>Correo: calmaplus@gmail.com</li>
+                <li>
+                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">
+                        Dirección: Av32 #57-26
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Redes sociales</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li>
+                <li><a class="footer-link" href="#">Facebook</a></li>
+                <li><a class="footer-link" href="#">TikTok</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
+
+    </footer> 
 </body>
 </html>

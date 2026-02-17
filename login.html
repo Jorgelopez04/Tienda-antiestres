@@ -5,69 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda virtual de productos antiestrés como pelotas y bandas de resistencia para mejorar tu bienestar.">
     <title>Tienda antiestres | CalmaPlus</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
-<body>
-    <header>
-        <h1>CalmaPlus</h1>
-        <p>Tu aliado contra el estrés diario</p>
-        <form action="#">
-            <input type="search" name="busqueda"placeholder="Buscar productos...">
-            <button type="submit">Buscar</button>
-        </form>
-        <nav>
-        <a href="carrito.html">Carrito</a>
-        <a href="login.html">Mi cuenta</a>
-        </nav>
-    </header>    
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Sobre nosotros</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ofertas.html">Ofertas</a></li>
+
+<body id="pagina-login">
+
+    <header class="header-principal">
+
+        <div class="header-contenedor">
+
+            
+            <div class="header-izquierda">
+                <h1 class="logo">CalmaPlus</h1>
+                <p class="slogan">Tu aliado contra el estrés diario</p>
+            </div>
+
+            
+            <div class="header-centro">
+                <input type="text" placeholder="Buscar productos..." class="input-buscar">
+                <button>Buscar</button>
+            </div>  
+
+            
+            <nav class="nav-usuario">
+                <a href="carrito.html" class="nav-icono">🛒</a>
+                <a href="login.html" class="nav-icono">👤</a>
+            </nav>
+
+        </div>
+
+    </header>   
+
+    <nav class="nav-principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+            <li><a class="nav-link" href="productos.html">Productos</a></li>
+            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li><a class="nav-link" href="ofertas.html">Ofertas</a></li>
         </ul>             
     </nav>
-    <main>
 
+    <main class="contenido-principal">
+        <section class="login-seccion">
 
+            <h2 class="titulo-pagina">Iniciar Sesión</h2>
+
+            <article class="login-introduccion">
+                <p class="login-texto">
+                    Bienvenido nuevamente a CalmaPlus. Inicia sesión con tu cuenta
+                    para acceder a tus pedidos, gestionar tu información personal
+                    y disfrutar de una experiencia de compra más rápida y personalizada.
+                </p>
+
+                <p class="login-texto">
+                    Si aún no tienes una cuenta, puedes registrarte fácilmente
+                    para comenzar a disfrutar de nuestros productos antiestrés
+                    y recibir información sobre promociones exclusivas.
+                </p>
+            </article>
+
+            <article class="login-formulario-seccion">
+
+                <form class="login-formulario" action="#" method="post">
+
+                    <div class="form-grupo">
+                        <label class="form-label" for="correo-login">
+                            Correo electrónico:
+                        </label>
+                        <input class="form-input"
+                            type="email"
+                            id="correo-login"
+                            name="correo"
+                            required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label class="form-label" for="password-login">
+                            Contraseña:
+                        </label>
+                        <input class="form-input"
+                            type="password"
+                            id="password-login"
+                            name="password"
+                            required>
+                    </div>
+
+                    <div class="login-opciones">
+                        <label class="login-recordar">
+                            <input type="checkbox" name="recordar">
+                            Recordar mi sesión
+                        </label>
+
+                        <a class="login-link" href="#">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+
+                    <div class="form-boton">
+                        <button class="btn btn-login" type="submit">
+                            Iniciar sesión
+                        </button>
+                    </div>
+
+                </form>
+
+            </article>
+
+            <article class="login-registro">
+
+                <h3 class="login-subtitulo">¿No tienes una cuenta?</h3>
+
+                <p class="login-texto">
+                    Crear una cuenta en CalmaPlus te permitirá realizar compras
+                    de manera más rápida, consultar el historial de tus pedidos
+                    y recibir notificaciones sobre nuevos productos y ofertas especiales.
+                </p>
+
+                <div class="login-registro-boton">
+                    <form action="#">
+                        <button class="btn btn-registrarse" type="submit">
+                            Crear cuenta
+                        </button>
+                    </form>
+                </div>
+
+            </article>
+
+        </section>
+
+       
     </main>
-    <footer>
-        <h3>Tienda</h3>
-            <section>
-                <ul>          
-                    <li><a href="productos.html">Productos</a></li>                    
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                </ul>             
-            </section>
-        <h3>Soporte</h3>
-            <section>
-                <ul> 
-                    <li><a href="terminos.html">Terminos y condiciones</a></li>       
-                </ul>             
-            </section>
 
-        <h3>Contactanos</h3>
-            <section>
-                <ul> 
-                    <li>Telefono:(604) 580 6935 ext 002</li>
-                    <li>Correo: calmaplus@gmail.com</li>
-                    <li>
-                    <a href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">Direccion: Av32 #57-26</a> 
-                    </li>                
-                </ul>  
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
 
-            </section>
-        <h3>Redes sociales</h3>
-            <section>
-                <ul> 
-                    <li><a href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
-                    <li><a href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li> 
-                    <li><a href="" target="_blank">Facebook</a></li>
-                    <li><a href="" target="_blank">TikTok</a></li>                    
-                </ul> 
-            </section>            
-        <p>&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
-    </footer>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Tienda</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="productos.html">Productos</a></li>
+                <li><a class="footer-link" href="ofertas.html">Ofertas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Soporte</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Contáctanos</h3>
+            <ul class="footer-lista">
+                <li>Teléfono: (604) 580 6935 ext 002</li>
+                <li>Correo: calmaplus@gmail.com</li>
+                <li>
+                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">
+                        Dirección: Av32 #57-26
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Redes sociales</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li>
+                <li><a class="footer-link" href="#">Facebook</a></li>
+                <li><a class="footer-link" href="#">TikTok</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
+
+    </footer> 
+
 </body>
 </html>

@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda virtual de productos antiestrés como pelotas y bandas de resistencia para mejorar tu bienestar.">
     <title>Tienda antiestres | CalmaPlus</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body id="pagina-carrito">
     
     <header class="header-principal">
-        <h1 class="logo">CalmaPlus</h1>
-        <p class="slogan">Tu aliado contra el estrés diario</p>
 
-        <form class="form-busqueda" action="#">
-            <input class="input-busqueda" type="search" name="busqueda" placeholder="Buscar productos...">
-            <button class="btn btn-buscar" type="submit">Buscar</button>
-        </form>
+        <div class="header-contenedor">
 
-        <nav class="nav-usuario">
-            <a class="nav-link" href="carrito.html">Carrito</a>
-            <a class="nav-link" href="login.html">Mi cuenta</a>
-        </nav>
+            
+            <div class="header-izquierda">
+                <h1 class="logo">CalmaPlus</h1>
+                <p class="slogan">Tu aliado contra el estrés diario</p>
+            </div>
+
+            
+            <div class="header-centro">
+                <input type="text" placeholder="Buscar productos..." class="input-buscar">
+                <button>Buscar</button>
+            </div>  
+
+            
+            <nav class="nav-usuario">
+                <a href="carrito.html" class="nav-icono">🛒</a>
+                <a href="login.html" class="nav-icono">👤</a>
+            </nav>
+
+        </div>
+
     </header>
     
     <nav class="nav-principal">
@@ -34,100 +47,98 @@
         </ul>             
     </nav>
     
-    <main class="contenido-principal">
+    <main class="carrito-layout">
 
-        <h2 class="titulo-pagina">Tu Carrito de Compras</h2>
         
-        <section class="carrito-tabla-seccion">
-            <table class="tabla-carrito" border="1">
-                <thead class="tabla-head">
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                        <th>Subtotal</th>
-                        <th>Accion</th>
-                    </tr>
-                </thead>
+        <section class="carrito-productos">
 
-                <tbody class="tabla-body">
-                    <tr class="carrito-item">
-                        <td class="item-nombre">Pelota de espuma antiestrés</td>
-                        <td class="item-precio">$15.000</td>
-                        <td class="item-cantidad">
-                            <input class="input-cantidad" type="number" value="2" min="1">
-                        </td>                    
-                        <td class="item-subtotal">$30.000</td>                   
-                        <td class="item-accion">
-                            <button class="btn btn-eliminar">Eliminar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2 class="carrito-titulo">Tu carrito</h2>
+
+            <div class="carrito-card">
+                <button class="btn-eliminar">×</button>
+                <img src="imagenes/pelota-antiestres.jpg" class="carrito-img">
+
+                <div class="carrito-detalle">
+                    <h4>Pelota Antiestrés</h4>
+                    <p class="precio">$15.000</p>
+                </div>
+
+                <div class="carrito-cantidad">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+
         </section>
+
         
-        <section class="carrito-vaciar">
-            <h3 class="subtitulo-seccion">Vaciar carrito</h3>
-            <form class="form-vaciar-carrito" action="eliminacion_total.html">
-                <button class="btn btn-vaciar" type="submit">Eliminar todos los productos</button>
-            </form>
-        </section>
-        
-        <section class="carrito-total-seccion">
-            <h3 class="total-pagar">Total a pagar: $30.000</h3>        
+        <aside class="carrito-resumen">
 
-            <form class="form-finalizar" action="confirmacion.html">
-                <button class="btn btn-finalizar" type="submit">Finalizar compra</button>
-            </form>
+            <h3>Resumen</h3>
 
-            <a class="link-seguir-comprando" href="productos.html">
-                <button class="btn btn-seguir">Seguir comprando</button>
-            </a>       
-        </section>
+            <div class="resumen-linea">
+                <span>Subtotal</span>
+                <span>$15.000</span>
+            </div>
+
+            <div class="resumen-linea total">
+                <span>Total</span>
+                <span>$15.000</span>
+            </div>
+
+            <button class="btn-checkout">Finalizar compra</button>
+
+        </aside>
 
     </main>
+
     
     <footer class="footer-principal">
+        <div class="footer-contenedor">
 
-        <h3 class="footer-titulo">Tienda</h3>
-        <section class="footer-seccion">
-            <ul class="footer-lista">          
-                <li><a class="footer-link" href="productos.html">Productos</a></li>                    
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Tienda</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="productos.html">Productos</a></li>
                 <li><a class="footer-link" href="ofertas.html">Ofertas</a></li>
-            </ul>             
-        </section>
+            </ul>
+        </div>
 
-        <h3 class="footer-titulo">Soporte</h3>
-        <section class="footer-seccion">
-            <ul class="footer-lista"> 
-                <li><a class="footer-link" href="terminos.html">Terminos y condiciones</a></li>       
-            </ul>             
-        </section>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Soporte</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
 
-        <h3 class="footer-titulo">Contactanos</h3>
-        <section class="footer-seccion">
-            <ul class="footer-lista"> 
-                <li>Telefono:(604) 580 6935 ext 002</li>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Contáctanos</h3>
+            <ul class="footer-lista">
+                <li>Teléfono: (604) 580 6935 ext 002</li>
                 <li>Correo: calmaplus@gmail.com</li>
                 <li>
-                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">Direccion: Av32 #57-26</a> 
-                </li>                
-            </ul>  
-        </section>
+                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">
+                        Dirección: Av32 #57-26
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-        <h3 class="footer-titulo">Redes sociales</h3>
-        <section class="footer-seccion">
-            <ul class="footer-lista"> 
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Redes sociales</h3>
+            <ul class="footer-lista">
                 <li><a class="footer-link" href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
-                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li> 
-                <li><a class="footer-link" href="" target="_blank">Facebook</a></li>
-                <li><a class="footer-link" href="" target="_blank">TikTok</a></li>                    
-            </ul> 
-        </section>
+                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li>
+                <li><a class="footer-link" href="#">Facebook</a></li>
+                <li><a class="footer-link" href="#">TikTok</a></li>
+            </ul>
+        </div>
+        </div>
 
         <p class="footer-copy">&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
 
-    </footer>
+    </footer> 
 
 </body>
 </html>

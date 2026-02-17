@@ -5,69 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda virtual de productos antiestrés como pelotas y bandas de resistencia para mejorar tu bienestar.">
     <title>Tienda antiestres | CalmaPlus</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
-<body>
-    <header>
-        <h1>CalmaPlus</h1>
-        <p>Tu aliado contra el estrés diario</p>
-        <form action="#">
-            <input type="search" name="busqueda"placeholder="Buscar productos...">
-            <button type="submit">Buscar</button>
-        </form>
-        <nav>
-        <a href="carrito.html">Carrito</a>
-        <a href="login.html">Mi cuenta</a>
-        </nav>
+
+<body id="pagina-base">
+    
+    <header class="header-principal">
+
+        <div class="header-contenedor">
+
+            
+            <div class="header-izquierda">
+                <h1 class="logo">CalmaPlus</h1>
+                <p class="slogan">Tu aliado contra el estrés diario</p>
+            </div>
+
+            
+            <div class="header-centro">
+                <input type="text" placeholder="Buscar productos..." class="input-buscar">
+                <button>Buscar</button>
+            </div>  
+
+            
+            <nav class="nav-usuario">
+                <a href="carrito.html" class="nav-icono">🛒</a>
+                <a href="login.html" class="nav-icono">👤</a>
+            </nav>
+
+        </div>
+
     </header>    
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Sobre nosotros</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ofertas.html">Ofertas</a></li>
+    
+    <nav class="nav-principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+            <li><a class="nav-link" href="productos.html">Productos</a></li>
+            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li><a class="nav-link" href="ofertas.html">Ofertas</a></li>
         </ul>             
     </nav>
-    <main>
+    
+    <main class="contenido-principal">
 
+        <section class="terminos-seccion">
+            <h2 class="titulo-pagina">Términos y Condiciones</h2>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">1. Información General</h3>
+                <p class="terminos-texto">
+                    Bienvenido a CalmaPlus. El presente documento establece los términos y condiciones
+                    que regulan el acceso y uso de nuestro sitio web y los servicios ofrecidos a través
+                    de esta tienda virtual. Al navegar por nuestro sitio, registrarte o realizar una compra,
+                    aceptas expresamente las disposiciones aquí descritas.
+                </p>
+                <p class="terminos-texto">
+                    CalmaPlus se reserva el derecho de actualizar, modificar o reemplazar cualquier parte
+                    de estos términos en cualquier momento. Es responsabilidad del usuario revisar
+                    periódicamente esta sección para estar informado sobre posibles cambios.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">2. Uso del Sitio Web</h3>
+                <p class="terminos-texto">
+                    El usuario se compromete a utilizar este sitio web de manera responsable,
+                    respetando la legislación vigente y los principios de buena fe. Está prohibido
+                    utilizar el sitio para realizar actividades fraudulentas, ilegales o que puedan
+                    afectar la seguridad, integridad o funcionamiento de la plataforma.
+                </p>
+                <p class="terminos-texto">
+                    Asimismo, el usuario no deberá intentar acceder a áreas restringidas del sistema,
+                    manipular datos, interferir con otros usuarios o utilizar herramientas automatizadas
+                    que puedan afectar el rendimiento del sitio web.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">3. Productos y Disponibilidad</h3>
+                <p class="terminos-texto">
+                    Los productos ofrecidos en CalmaPlus están destinados a promover el bienestar
+                    y reducir el estrés diario. La información sobre características, imágenes y precios
+                    es presentada con la mayor precisión posible; sin embargo, podrían existir
+                    variaciones mínimas debido a actualizaciones o cambios de proveedor.
+                </p>
+                <p class="terminos-texto">
+                    La disponibilidad de los productos está sujeta al inventario existente.
+                    En caso de que un producto adquirido no esté disponible, el usuario será
+                    informado oportunamente y se procederá con la devolución del dinero o
+                    la opción de elegir un producto alternativo.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">4. Precios y Formas de Pago</h3>
+                <p class="terminos-texto">
+                    Todos los precios publicados en nuestra tienda se encuentran expresados en moneda local
+                    y pueden estar sujetos a impuestos aplicables. CalmaPlus se reserva el derecho
+                    de modificar los precios sin previo aviso.
+                </p>
+                <p class="terminos-texto">
+                    El proceso de pago deberá completarse correctamente para que el pedido sea
+                    confirmado. Una vez aprobado el pago por la entidad financiera correspondiente,
+                    el pedido será procesado y preparado para su envío.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">5. Envíos y Entregas</h3>
+                <p class="terminos-texto">
+                    Los tiempos de entrega pueden variar dependiendo de la ubicación del usuario
+                    y la disponibilidad del producto. CalmaPlus no se hace responsable por retrasos
+                    ocasionados por terceros, como empresas de mensajería o situaciones externas
+                    fuera de nuestro control.
+                </p>
+                <p class="terminos-texto">
+                    Es responsabilidad del usuario proporcionar información correcta y actualizada
+                    para garantizar una entrega exitosa.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">6. Protección de Datos Personales</h3>
+                <p class="terminos-texto">
+                    CalmaPlus se compromete a proteger la información personal de sus usuarios.
+                    Los datos recopilados serán utilizados únicamente para procesar pedidos,
+                    mejorar la experiencia de compra y enviar información relacionada con
+                    promociones o novedades, siempre respetando la privacidad del cliente.
+                </p>
+                <p class="terminos-texto">
+                    No compartimos información personal con terceros sin el consentimiento
+                    previo del usuario, salvo en los casos exigidos por la ley.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">7. Modificaciones y Cancelaciones</h3>
+                <p class="terminos-texto">
+                    El usuario podrá solicitar modificaciones o cancelaciones de su pedido antes
+                    de que este haya sido enviado. Una vez despachado el producto, deberá
+                    seguir el procedimiento establecido en nuestra política de devoluciones.
+                </p>
+                <p class="terminos-texto">
+                    CalmaPlus se reserva el derecho de cancelar pedidos en caso de detectar
+                    irregularidades, errores en los precios o posibles actividades fraudulentas.
+                </p>
+            </article>
+
+            <article class="terminos-articulo">
+                <h3 class="terminos-subtitulo">8. Aceptación de los Términos</h3>
+                <p class="terminos-texto">
+                    Al realizar una compra en nuestra tienda virtual, el usuario declara haber leído,
+                    comprendido y aceptado los presentes términos y condiciones en su totalidad.
+                    En caso de no estar de acuerdo con alguna disposición, deberá abstenerse
+                    de utilizar el sitio web.
+                </p>
+            </article>
+
+        </section>
 
     </main>
-    <footer>
-        <h3>Tienda</h3>
-            <section>
-                <ul>          
-                    <li><a href="productos.html">Productos</a></li>                    
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                </ul>             
-            </section>
-        <h3>Soporte</h3>
-            <section>
-                <ul> 
-                    <li><a href="terminos.html">Terminos y condiciones</a></li>       
-                </ul>             
-            </section>
+    
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
 
-        <h3>Contactanos</h3>
-            <section>
-                <ul> 
-                    <li>Telefono:(604) 580 6935 ext 002</li>
-                    <li>Correo: calmaplus@gmail.com</li>
-                    <li>
-                    <a href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">Direccion: Av32 #57-26</a> 
-                    </li>                
-                </ul>  
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Tienda</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="productos.html">Productos</a></li>
+                <li><a class="footer-link" href="ofertas.html">Ofertas</a></li>
+            </ul>
+        </div>
 
-            </section>
-        <h3>Redes sociales</h3>
-            <section>
-                <ul> 
-                    <li><a href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
-                    <li><a href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li> 
-                    <li><a href="" target="_blank">Facebook</a></li>
-                    <li><a href="" target="_blank">TikTok</a></li>                    
-                </ul> 
-            </section>            
-        <p>&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
-    </footer>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Soporte</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Contáctanos</h3>
+            <ul class="footer-lista">
+                <li>Teléfono: (604) 580 6935 ext 002</li>
+                <li>Correo: calmaplus@gmail.com</li>
+                <li>
+                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">
+                        Dirección: Av32 #57-26
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Redes sociales</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li>
+                <li><a class="footer-link" href="#">Facebook</a></li>
+                <li><a class="footer-link" href="#">TikTok</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
+
+    </footer> 
+
 </body>
 </html>

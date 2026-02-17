@@ -8,20 +8,31 @@
 </head>
 <body id="body-producto-banda">
 
-    <header id="header-producto-banda">
-        <h1 id="logo-producto-banda">CalmaPlus</h1>
-        <p id="slogan-producto-banda">Tu aliado contra el estrés diario</p>
+    <header class="header-principal">
 
-        <form id="form-busqueda-producto-banda" action="#">
-            <input type="search" id="input-busqueda-producto-banda" name="busqueda" placeholder="Buscar productos...">
-            <button type="submit" id="btn-buscar-producto-banda">Buscar</button>
-        </form>
+        <div class="header-contenedor">
 
-        <nav id="nav-superior-producto-banda">
-            <a id="link-carrito-producto-banda" href="/carrito.html">Carrito</a>
-            <a id="link-login-producto-banda" href="/login.html">Mi cuenta</a>
-        </nav>
-    </header>    
+            
+            <div class="header-izquierda">
+                <h1 class="logo">CalmaPlus</h1>
+                <p class="slogan">Tu aliado contra el estrés diario</p>
+            </div>
+
+            
+            <div class="header-centro">
+                <input type="text" placeholder="Buscar productos..." class="input-buscar">
+                <button>Buscar</button>
+            </div>  
+
+            
+            <nav class="nav-usuario">
+                <a href="carrito.html" class="nav-icono">🛒</a>
+                <a href="login.html" class="nav-icono">👤</a>
+            </nav>
+
+        </div>
+
+    </header>   
 
     <nav id="nav-principal-producto-banda">
         <ul id="lista-nav-producto-banda">
@@ -58,51 +69,51 @@
         </section>
     </main>
 
-    <footer id="footer-producto-banda">
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
 
-        <h3 id="footer-tienda-producto-banda">Tienda</h3>
-        <section id="section-footer-tienda-producto-banda">
-            <ul id="lista-footer-tienda-producto-banda">          
-                <li><a href="/productos.html">Productos</a></li>                    
-                <li><a href="/ofertas.html">Ofertas</a></li>
-            </ul>             
-        </section>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Tienda</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="productos.html">Productos</a></li>
+                <li><a class="footer-link" href="ofertas.html">Ofertas</a></li>
+            </ul>
+        </div>
 
-        <h3 id="footer-soporte-producto-banda">Soporte</h3>
-        <section id="section-footer-soporte-producto-banda">
-            <ul id="lista-footer-soporte-producto-banda"> 
-                <li><a href="/terminos.html">Terminos y condiciones</a></li>       
-            </ul>             
-        </section>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Soporte</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
 
-        <h3 id="footer-contacto-producto-banda">Contactanos</h3>
-        <section id="section-footer-contacto-producto-banda">
-            <ul id="lista-footer-contacto-producto-banda"> 
-                <li>Telefono:(604) 580 6935 ext 002</li>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Contáctanos</h3>
+            <ul class="footer-lista">
+                <li>Teléfono: (604) 580 6935 ext 002</li>
                 <li>Correo: calmaplus@gmail.com</li>
                 <li>
-                    <a id="link-mapa-producto-banda" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">
-                       Direccion: Av32 #57-26
-                    </a> 
-                </li>                
-            </ul>  
-        </section>
+                    <a class="footer-link" href="https://maps.app.goo.gl/5FmbYn1FWK1jNLmaA" target="_blank">
+                        Dirección: Av32 #57-26
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-        <h3 id="footer-redes-producto-banda">Redes sociales</h3>
-        <section id="section-footer-redes-producto-banda">
-            <ul id="lista-footer-redes-producto-banda"> 
-                <li><a href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
-                <li><a href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li> 
-                <li><a href="" target="_blank">Facebook</a></li>
-                <li><a href="" target="_blank">TikTok</a></li>                    
-            </ul> 
-        </section>            
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Redes sociales</h3>
+            <ul class="footer-lista">
+                <li><a class="footer-link" href="https://wa.me/573054070814" target="_blank">WhatsApp</a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/j.lopez0456/" target="_blank">Instagram</a></li>
+                <li><a class="footer-link" href="#">Facebook</a></li>
+                <li><a class="footer-link" href="#">TikTok</a></li>
+            </ul>
+        </div>
+        </div>
 
-        <p id="copyright-producto-banda">
-            &copy; 2026 CalmaPlus - Todos los derechos reservados.
-        </p>
+        <p class="footer-copy">&copy; 2026 CalmaPlus - Todos los derechos reservados.</p>
 
-    </footer>
+    </footer> 
 
 </body>
 </html>
